@@ -307,3 +307,18 @@ body {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+[data-semana]::after {
+  display: inline-block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e54;
+  margin-left: 4px;
+  border: 1px solid black;
+}
+
+[data-semana].aberto::after {
+  background: rgb(3, 231, 3);
+}
