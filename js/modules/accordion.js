@@ -1,8 +1,8 @@
 const initAccordion = () => {
   const accordionList = document.querySelectorAll(
-    '[data-anime="accordion"] dt'
+    '[data-anime="accordion"] dt',
   );
-  const activeClass = "ativo";
+  const activeClass = 'ativo';
 
   if (accordionList.length) {
     accordionList[0].classList.add(activeClass);
@@ -12,9 +12,7 @@ const initAccordion = () => {
       event.currentTarget.classList.toggle(activeClass);
       event.currentTarget.nextElementSibling.classList.toggle(activeClass);
     };
-    accordionList.forEach((item) =>
-      item.addEventListener("click", activeAccordion)
-    );
+    accordionList.forEach((item) => item.addEventListener('click', activeAccordion));
   }
 };
 
