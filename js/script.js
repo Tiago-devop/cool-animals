@@ -13,7 +13,6 @@ import initFetchBitcoin from './modules/fetch-bitcoin.js';
 const smoothScroll = new SmoothScroll('[data-menu="suave"] a[href^="#"]');
 smoothScroll.init();
 
-initAnimationScroll();
 initAccordion();
 initTabNav();
 initModal();
@@ -23,3 +22,4 @@ initMenuMobile();
 initFuncionamento();
 initFetchAnimais();
 initFetchBitcoin();
+initAnimationScroll();
